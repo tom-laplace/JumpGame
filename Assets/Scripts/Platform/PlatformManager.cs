@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
-    readonly float platformSpeed = 5f;
+    readonly float platformSpeed = 3f;
     
-
     void Update()
     {
         if (gameObject.transform.position.x < -30.0f)

@@ -10,8 +10,6 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Make character move to the right 
-        transform.position += Vector3.right * speed * Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<Animator>().SetTrigger("Jump");

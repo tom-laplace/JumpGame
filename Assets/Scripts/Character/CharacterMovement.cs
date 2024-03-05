@@ -16,7 +16,6 @@ public class CharacterMovement : MonoBehaviour
                 Jump();
                 jumpCount++;
             }
-
         }
     }
 

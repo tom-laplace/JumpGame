@@ -16,6 +16,8 @@ public class CharacterManager : MonoBehaviour
     public void ResetCharacter()
     {
         Destroy(gameObject);
+        gameObject.GetComponent<CharacterCounter>().ResetCounts();
         Instantiate(gameObject, initialPosition, Quaternion.identity);
+
     }
 }

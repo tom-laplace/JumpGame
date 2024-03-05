@@ -16,7 +16,7 @@ public class PlatformManager : MonoBehaviour
 
     public void CreatePlatform()
     {
-        float 
-        Instantiate(gameObject, new Vector3(0, Random(1f, 10f), 0), Quaternion.identity);
+        float randomHeight = Random.Range(1f, 10f);
+        Instantiate(gameObject, new Vector3(0, randomHeight, 0), Quaternion.identity);
     }
 }

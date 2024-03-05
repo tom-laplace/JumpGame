@@ -7,9 +7,9 @@ public class CharacterCollider : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Platform"))
         {
-            gameObject.GetComponent<CharacterManager>().ResetCharacter();
+            gameObject.GetComponent<CharacterMovement>().jumpCount = 0;
         }
     }
 }

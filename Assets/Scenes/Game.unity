@@ -1362,6 +1362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 17304649207013445, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 268787451240823999, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
       propertyPath: m_Name
       value: Coin (1)
@@ -1790,6 +1794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 17304649207013445, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 268787451240823999, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
       propertyPath: m_Name
       value: Coin
@@ -1804,11 +1812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5210373228331289774, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.04
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 5210373228331289774, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.15
+      value: -1.24
       objectReference: {fileID: 0}
     - target: {fileID: 5210373228331289774, guid: 262c258546aab834285f9b1fe8d05740, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2083,11 +2091,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5195615040706023285, guid: 1fd476b247859d84c93ff678acc0927d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.64
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 5195615040706023285, guid: 1fd476b247859d84c93ff678acc0927d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.12
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: 5195615040706023285, guid: 1fd476b247859d84c93ff678acc0927d, type: 3}
       propertyPath: m_LocalPosition.z

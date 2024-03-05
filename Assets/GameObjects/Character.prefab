@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1556411217666636773}
   - component: {fileID: 412053843926270253}
   - component: {fileID: 7860580075282633082}
-  - component: {fileID: 5906274528626538590}
   - component: {fileID: 5075523469585878978}
   m_Layer: 0
   m_Name: Character
@@ -136,19 +135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5906274528626538590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882816022103817331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b0f3d0bfe804f4cbad1f3ddbca1528, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 5
 --- !u!70 &5075523469585878978
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
@@ -8,16 +9,14 @@ public class CharacterManager : MonoBehaviour
 
     void Update()
     {
-        if(gameObject.transform.position.y < -5.0f)
+        if(gameObject.transform.position.y < -5.0f || gameObject.transform.position.x < -10.0f)
         {
-            ResetCharacter();
+            StartCoroutine(LoadGameOver());
         }
     }
-    public void ResetCharacter()
-    {
-        gameObject.GetComponent<CharacterCounter>().ResetCounts();
-        Destroy(gameObject);
-        Instantiate(gameObject, initialPosition, Quaternion.identity);
 
+    IEnumerator LoadGameOver(){
+        yield return new WaitForSeconds(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
     }
 }

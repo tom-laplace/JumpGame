@@ -6,6 +6,14 @@ public class CharacterMovement : MonoBehaviour
 {
     public float jumpForce = 5.0f;
     public int jumpCount = 0;
+    Rigidbody2D rb;
+    Vector2 vecGravity;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        vecGravity = new Vector2(0, -Physics2D.gravity.y);
+    }
 
     void Update()
     {
@@ -16,6 +24,11 @@ public class CharacterMovement : MonoBehaviour
                 Jump();
                 jumpCount++;
             }
+        }
+
+        if(rb.velocity.y < 0)
+        {
+            rb.velocity -= 0.5f * Time.deltaTime * vecGravity;
         }
     }
 

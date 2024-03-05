@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformBuilder : MonoBehaviour
 {
-    public float Timer = 2;
+    public float Timer = 1.5f;
 
     // Update is called once per frame
     void Update()
@@ -13,7 +13,7 @@ public class PlatformBuilder : MonoBehaviour
         if (Timer <= 0f)
         {
             GameObject.FindGameObjectWithTag("Platform").GetComponent<PlatformManager>().CreatePlatform();
-            Timer = 2;
+            Timer = 1.5f;
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed = 1.0f;
     public float jumpForce = 5.0f;
 
     // Update is called once per frame
